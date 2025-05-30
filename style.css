@@ -1,8 +1,59 @@
-h1{
-color:blue;
-font-size:200%;
-background-color:navy;
-font-family-Arial;
-text-align-centre;
-padding:10%;
+body {
+    font-family: serif, sans-serif;
+    margin: 0;
+    background-color:navy;
+}
+
+/* Flexbox for the header */
+.navbar-container {
+    display: flex; /* Makes this div a flex container */
+    justify-content: space-between; /* Pushes logo to left, links to right */
+    align-items: center; /* Vertically centers the logo and links */
+    background-color: linear-gradient(to right,red,blue);
+    padding: 10px 20px;
+    background-image: Linear-gradient(to top,red,blue);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: blue;
+
+}
+
+.nav-links a {
+    color: red;
+    text-decoration: none;
+    margin-left: 20px; /* Space between the links */
+    padding: 5px 10px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+
+/* Flexbox for the image gallery */
+.image-gallery {
+    display: flex; /* Makes this div a flex container */
+    justify-content: center; /* Centers the images horizontally */
+    gap: 15px; /* Adds space between the images */
+    margin-top: 30px;
+    border: 2px dashed gray;
+    padding: 20px;
+}
+
+.image-gallery img {
+    border-radius: 10px; /* Slightly rounded corners for images */
+}
+.introduction{
+    font-size: 1em;
+    color:red;
+    width:400px;
+    height:200px;
+    margin-left: 30px;
+    margin-top: 20px;
+    display:flex
 }
